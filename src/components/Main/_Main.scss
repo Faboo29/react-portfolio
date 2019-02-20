@@ -1,0 +1,45 @@
+@import '../../helpers/mixins/flexbox';
+
+#main {
+    position: relative;
+    padding-top: 124px;
+    width: 100vw;
+    height: 100vh;
+    @include flexbox();
+    background: url('assets/home-background.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.loader {
+    position: fixed;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    -webkit-transition: width 0.8s ease;
+    transition: width 0.8s ease;
+    @include flexbox();
+
+    span {
+        margin: auto;
+    }
+
+    &.has-loaded {
+        width: 0px;
+    }
+}
+
+h1 {
+    font-weight: 500;
+    margin: auto;
+}
+
+.svg-filter-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,44 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    color:#58adbf;
+    @include flexbox();
+    @include justify-content(space-between);
+    padding: 10px 5%;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.2);
+
+    @import 'Navigation/navigation';
+
+    .logo-container {
+        width: calc(33% - 10px);
+    }
+
+    .contact-nav-wrapper {
+        @include flexbox();
+        width: calc(33% - 10px);
+        @include justify-content(flex-end);
+
+        a {
+            display: block;
+            margin: auto 1em;
+            text-decoration: none;
+
+            @include flexbox();
+
+            h2 {
+                margin: auto;
+                color: $fontGreen;
+                text-decoration: none;
+                padding: 0.6em 1.4em;
+                font-weight: 500;
+                font-size: 16px;
+                border: 1px solid $fontGreen;
+                border-radius: 20px;
+                margin: 0 1em;
+            }
+        }
+    }
+}

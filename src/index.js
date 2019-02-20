@@ -1,21 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.scss';
 import App from './App';
 
 import * as serviceWorker from './serviceWorker';
 
-
-import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
-const store = createStore(() => [], {}, applyMiddleware()); 
-
 const rootElement  = document.getElementById('root');
 
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
+    <Router>
+        <App/>
+    </Router>,
     rootElement
 );
 

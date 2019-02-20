@@ -1,5 +1,26 @@
+// FONTS 
+// ------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,700');
+
+// HELPERS
+@import 'helpers/helpers';
+
+// HEADER 
+// ------------------------------------------------------------------------
+@import 'components/Header/Header';
+
+// MAIN
+// ------------------------------------------------------------------------
+@import 'components/Main/Main';
+
+* {
+  box-sizing: border-box;
+}
+
 .App {
   text-align: center;
+  font-family: 'Raleway', sans-serif;
+  @include flexbox();
 }
 
 .App-logo {
