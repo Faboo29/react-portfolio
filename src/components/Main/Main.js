@@ -30,13 +30,6 @@ class Main extends Component {
         return (
             <div id="main">
                 <div className={this.state.loaderClass.join(' ')}><span>LOADING</span></div>
-                <div className="svg-filter-wrapper">
-                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
-                        <filter id="myblurfilter" width="110%" height="100%">
-                            <feGaussianBlur stdDeviation="2" result="blur" />
-                        </filter>
-                    </svg>
-                </div>
                 <Switch>
                     <Route path="/about" component={About}/>
                     <Route path="/languages" component={Languages}/>

@@ -12,7 +12,7 @@ class Main extends Component {
         }
     }
 
-    componentWillMount() { 
+    componentDidMount() { 
         Firebase.database().ref('/languages/').once('value').then(snap => {
             this.setState({ languages: snap.val() }); 
         })
@@ -20,9 +20,12 @@ class Main extends Component {
 
     render() {
         return (
-            <article className="languages-section">
-                <h1>What I speak...</h1>
-                <ul>
+            <article className="main-section main-section__languages">
+                <div className="section-title"> 
+                    <h1>What I speak...</h1>
+                </div>
+
+                <ul className="languages-list-items">
                     {
                         this.state.languages.map((language, index) => {
                             return <Language key={index}  content={language} />

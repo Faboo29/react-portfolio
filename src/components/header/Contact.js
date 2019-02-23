@@ -7,7 +7,7 @@ const Contact = (props) => {
             <a href="#" target="_blank">
                 <h2>Contact me</h2>
                 <svg version="1.1" x="0px" y="0px"
-                    width="40px" height="40px" viewBox="0 0 100 100" enable-background="new 0 0 100 100">
+                    width="40px" height="40px" viewBox="0 0 100 100" enableBackground="new 0 0 100 100">
                     <g>
                         <g>
                             <g>

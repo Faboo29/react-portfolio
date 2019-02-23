@@ -1,16 +1,82 @@
 #main-navigation {
     width: calc(33% - 10px);
+    text-align: left;
 
     .menu-toggle {
         position: relative;
-
-        
+        width: auto;
+        display: inline-block;
+        cursor: pointer;
     }
 
     .navigation-items {
-        position: absolute;
+        position: fixed;
+        top: 84px;
         list-style-type: none;
-        padding: none;
+        padding: 0;
+        margin: 0;
+        width: 0%;
+        height: calc(100% - 84px);
+        left: 0;
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
 
+        li.navigation-item {
+            width: 0;
+            transform: translateX(100%);
+            height: 25%;
+            @include flexbox;
+
+            a {
+                @include flexbox();
+                position: relative;
+                color: white;
+                text-decoration: none;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                margin: auto;
+                font-weight: 500;
+                text-transform: uppercase;
+                font-size: 30px;
+                opacity: 0;
+                transition: opacity 0.2s ease;
+
+                &:hover {
+                    span {
+                        color: $fontGreen;
+                    }
+                }
+
+                span {
+                    margin: auto;
+                    color: white;
+                    transition: all 0.2s ease;
+                    display: none;
+                }
+            }
+        }
+
+        &.is-active {
+            opacity: 1;
+            width: 100%;
+
+            li a span {
+                display: block;
+            }
+
+            @for $i  from 1 through 4 {
+                li.navigation-item:nth-of-type(#{$i}) {
+                    transform: translateX(0);
+                    transition: all 0.6s  cubic-bezier(0.645, 0.045, 0.355, 1.000) (0.1s + ($i - 1) * 0.1s);
+                    width: 100%;
+                    background: rgba(0,0,0, (0.8 + ($i * 0.05)));
+                    a {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
     }
 }

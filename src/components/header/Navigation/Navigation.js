@@ -1,33 +1,67 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
+import ToggleButton from './ToggleButton';
 
 class Navigation extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isOpened: false
+        }
+
+        this.setMenuState = this.setMenuState.bind(this);
+        this.closeMenu = this.closeMenu.bind(this);
+    }
+
+    setMenuState() {
+        this.setState(prevState => {
+            return { isOpened: !prevState.isOpened }
+        })
+        console.log(this.state.isOpened);     
+    }
+
+    closeMenu() {
+       if (this.state.isOpened) {
+           this.setState({ isOpened: false });
+       }
+    }
+
     render() {
+        let menuItems = [
+            {
+                path: '/home',
+                content: 'Home'
+            },
+            {
+                path: '/languages',
+                content: 'Skills'
+            },
+            {
+                path: '/experience',
+                content: 'Experience'
+            },
+            {
+                path: '/about',
+                content: 'About'
+            }
+        ];
+
         return (
             <nav id="main-navigation">
-                <div className="menu-toggle">
-                    <div className="menu-toggle__item menu-toggle__item__one"></div>
-                    <div className="menu-toggle__item menu-toggle__item__two"></div>
-                    <div className="menu-toggle__item menu-toggle__item__three"></div>
-                </div>
+                <ToggleButton setMenuState={this.setMenuState} isOpened={this.state.isOpened} />
 
-                <ul className="navigation-items">
-
-                    <li className="navigation-item">
-                        <Link to="/home">Home</Link>
-                    </li>
-
-                    <li className="navigation-item">
-                        <Link to="/languages">Skills</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/experience">Experience</Link>
-                    </li>
-
-                    <li>
-                        <Link to="/about">About</Link>
-                    </li>
+                <ul className={"navigation-items " + (this.state.isOpened ? 'is-active' : '')}>
+                    {
+                        menuItems.map((item, index) => {
+                            return (
+                                <li key={index} className="navigation-item" onClick={this.closeMenu}>
+                                    <Link to={item.path}>
+                                        <span>{item.content}</span>
+                                    </Link>
+                                </li>
+                            )
+                        })
+                    }
                 </ul>
             </nav>
         );

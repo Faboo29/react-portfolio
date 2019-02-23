@@ -1,1 +1,7 @@
 // LANGUAGES
+.languages-list-items {
+    @include flexbox();
+    padding: 2em;
+    list-style-type: none;
+
+}
