@@ -6,7 +6,9 @@ class Language extends Component {
         return (
             <li className="language-item">
                 <div className="language-item__image">
-                    {this.props.content.image}
+                    <img 
+                        src={require('./assets/' + this.props.content.image + '.png')}
+                        alt={this.props.content.code} /> 
                 </div>
                 <div className="language-item__level">
                     {this.props.content.level}

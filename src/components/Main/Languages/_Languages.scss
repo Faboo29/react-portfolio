@@ -3,5 +3,31 @@
     @include flexbox();
     padding: 2em;
     list-style-type: none;
+    color: white;
 
+    .language-item {
+        width: calc(25% - 20px);
+        margin: 2em 0;
+        padding: 1em;
+
+        &__image {
+            img {
+                width: 100%;
+                display: block;
+                max-width: 200px;
+                margin: 0 auto;
+            }
+        }
+
+        &__content {
+            position: relative;
+            padding: 2em 1em;
+            background: rgba(21, 26, 29, 0.9);
+            border-radius: 4px;
+
+            h2, .description {
+                position: relative;
+            }
+        }
+    }
 }

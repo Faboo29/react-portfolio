@@ -7,7 +7,6 @@ class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            loaderClass: ['loader'],
             languages: []
         }
     }
@@ -15,7 +14,7 @@ class Main extends Component {
     componentDidMount() { 
         Firebase.database().ref('/languages/').once('value').then(snap => {
             this.setState({ languages: snap.val() }); 
-        })
+        })      
     }
 
     render() {
