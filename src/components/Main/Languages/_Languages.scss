@@ -19,6 +19,30 @@
             }
         }
 
+        &__level {
+            height: 20px;
+            position: relative;
+
+            .star-wrapper {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+                @include flexbox();
+                @include justify-content(center);
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    margin: 0 4px;
+                    transform-origin: bottom;
+                    opacity: 0;
+                    transform: translateY(40px) scale(0.8);
+                    backface-visibility: hidden;
+                }
+            }   
+        }
+
         &__content {
             position: relative;
             padding: 2em 1em;
