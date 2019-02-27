@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
-import Firebase from '../Firebase/Firebase';
-import 'firebase/database';
+import data from './languages.json';
 import Language from './Language';
 
 class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            languages: []
+            languages: data.languages
         }
-    }
-
-    componentDidMount() { 
-        Firebase.database().ref('/languages/').once('value').then(snap => {
-            this.setState({ languages: snap.val() }); 
-        })      
     }
 
     render() {
