@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 class Language extends Component {
 
     render() {
+        let starCount = this.props.content.level;
+
         return (
             <li className="language-item">
                 <div className="language-item__image">
@@ -11,7 +13,7 @@ class Language extends Component {
                         alt={this.props.content.code} /> 
                 </div>
                 <div className="language-item__level">
-                    {this.props.content.level}
+                    {starCount}
                 </div>
                 <div className="language-item__content">
                     <h2>{this.props.content.code}</h2>
