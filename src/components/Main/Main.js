@@ -29,7 +29,7 @@ class Main extends Component {
     render() {
         return (
             <div id="main">
-                <div className={this.state.loaderClass.join(' ')}><span>LOADING</span></div>
+                {/* <div className={this.state.loaderClass.join(' ')}><span>LOADING</span></div> */}
                 <Switch>
                     <Route path="/about" component={About}/>
                     <Route path="/languages" component={Languages}/>

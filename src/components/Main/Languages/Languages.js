@@ -14,7 +14,7 @@ class Main extends Component {
         return (
             <article className="main-section main-section__languages">
                 <div className="section-title"> 
-                    <h1>What I speak...</h1>
+                    <h1>What I speak <span>...</span></h1>
                 </div>
 
                 <ul className="languages-list-items">
