@@ -17,7 +17,6 @@ class Navigation extends Component {
         this.setState(prevState => {
             return { isOpened: !prevState.isOpened }
         })
-        console.log(this.state.isOpened);     
     }
 
     closeMenu() {
@@ -33,7 +32,7 @@ class Navigation extends Component {
                 content: 'Home'
             },
             {
-                path: '/languages',
+                path: '/skills',
                 content: 'Skills'
             },
             {

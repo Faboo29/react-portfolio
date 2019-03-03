@@ -1,0 +1,45 @@
+{
+    "languages" : [
+      {
+        "code" : "HTML",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "html-logo",
+        "level" : 5
+      }, {
+        "code" : "CSS",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "css-logo",
+        "level" : 5
+      }, {
+        "code" : "JavaScript",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "js-logo",
+        "level" : 4
+      }, {
+        "code" : "C#",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "csharp-logo",
+        "level" : 2
+      }
+    ],
+    "tools": [
+      {
+        "tool" : "CMS",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "html-logo"
+      }, {
+        "tool" : "Photoshop",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "ps-logo"
+      }, {
+        "tool" : "Illustrator",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "ai-logo"
+      }, {
+        "tool" : "XD",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+        "image" : "xd-logo"
+      }
+    ]
+  }
+  

@@ -48,20 +48,76 @@ h1 {
 }
 
 article.main-section {
-    padding: 1% 5%;
-    width: 100%;
+    position: relative;
+    padding: 0 1em;
+    width: 90%;
     height: 100%;
+    margin: 0 auto;
     overflow: hidden;
+    overflow-y: scroll;
+
+    
+    // Custom scrollbar
+    &::-webkit-scrollbar {
+        width: 6px;
+        border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 20px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #eee;
+        border-radius: 20px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+        border-radius: 20px;
+    }
 }
+
+.inner-section {
+    height: 100%;
+}
+
+// Page bookmark
+.page-bookmark {
+    position: fixed;
+    bottom: -200px;
+    left: -400px;
+    width: 800px;
+    height: 800px;
+    background: #eee;
+    @include flexbox();
+    border-radius: 50%;
+    font-weight: 600;
+    z-index: 1;
+    box-shadow: 10px 10px 0px rgba(0,0,0,0.2);
+
+    span {
+        margin: auto;
+        font-size: 2em;
+        text-transform: uppercase;
+        position: relative;
+        top: 0px;
+        left: 160px;
+    }
+}
+
 
 .section-title {
     text-transform: uppercase;
     text-align: left;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
     
     h1 {
         color: $darkGrey;
-        font-size: 30px;
-        margin: 0;
+        font-size: 1.6em;
+        margin: 0 0 0 2em;
 
         span {
             color: $green;
@@ -72,4 +128,4 @@ article.main-section {
     }
 }
 
-@import 'Languages/Languages';
+@import 'Skills/Skills';
