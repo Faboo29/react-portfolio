@@ -1,45 +1,44 @@
 {
-    "languages" : [
-      {
-        "code" : "HTML",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "html-logo",
-        "level" : 5
-      }, {
-        "code" : "CSS",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "css-logo",
-        "level" : 5
-      }, {
-        "code" : "JavaScript",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "js-logo",
-        "level" : 4
-      }, {
-        "code" : "C#",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "csharp-logo",
-        "level" : 2
-      }
-    ],
-    "tools": [
-      {
-        "tool" : "CMS",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "html-logo"
-      }, {
-        "tool" : "Photoshop",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "ps-logo"
-      }, {
-        "tool" : "Illustrator",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "ai-logo"
-      }, {
-        "tool" : "XD",
-        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
-        "image" : "xd-logo"
-      }
-    ]
-  }
-  
+  "languages" : [
+    {
+      "code" : "HTML",
+      "description" : "Building application skeleton with various tools depending on the project environment, going from custom HTML5, template engine such as Handlebars or using standard libraries like Bootstrap.",
+      "image" : "html-logo",
+      "level" : 5
+    }, {
+      "code" : "CSS",
+      "description" : "I design websites using latest CSS trends but compliant with multiple browsers, all compiled using the standard CSS extension language such as SCSS or LESS.",
+      "image" : "css-logo",
+      "level" : 5
+    }, {
+      "code" : "JavaScript",
+      "description" : "Building interactivity using Vanilla Javascript or jQuery, as well as application with Javascript frameworks such as React or Vue.",
+      "image" : "js-logo",
+      "level" : 4
+    }, {
+      "code" : "C#",
+      "description" : "As a video game enthusiast, I enjoy using Unity engine which gave me some experience with the C# language.",
+      "image" : "csharp-logo",
+      "level" : 2
+    }
+  ],
+  "tools": [
+    {
+      "tool" : "CMS",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+      "image" : "cms-logo"
+    }, {
+      "tool" : "Photoshop",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+      "image" : "ps-logo"
+    }, {
+      "tool" : "Illustrator",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+      "image" : "ai-logo"
+    }, {
+      "tool" : "XD",
+      "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et consequat orci, nec tincidunt metus. Morbi sagittis consequat nisl, eu dignissim velit dictum eget.",
+      "image" : "xd-logo"
+    }
+  ]
+}

@@ -31,7 +31,7 @@
 
             .star-wrapper {
                 position: absolute;
-                top: -12px;
+                top: 0px;
                 width: 100%;
                 z-index: 1;
                 @include flexbox();
@@ -51,7 +51,7 @@
 
         &__content {
             position: relative;
-            padding: 2em 1em;
+            padding: 1em;
             border-radius: 4px;
             opacity: 0;
             transform-origin: bottom;

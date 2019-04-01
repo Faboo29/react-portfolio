@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 
 class Tools extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
             <li 
                 className="tool-item" >
                 <div className="tool-item__image">
-                    <img src="someimg.png" />
+                    <img 
+                        src={require('./assets/' + this.props.content.image + '.svg')}
+                        alt={this.props.content.code} /> 
                 </div>
 
                 <div 
